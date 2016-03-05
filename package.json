@@ -1,0 +1,30 @@
+{
+  "name": "WCPSSstats",
+  "version": "1.0.0",
+  "description": "A MEAN app that exposes WCPSS statistics via RESTful APIs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaneodonnell/wcpss.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Express",
+    "Angular"
+  ],
+  "author": "Shane O'Donnell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaneodonnell/wcpss/issues"
+  },
+  "homepage": "https://github.com/shaneodonnell/wcpss",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.43"
+  }
+}
