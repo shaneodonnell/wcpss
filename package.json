@@ -1,5 +1,5 @@
 {
-  "name": "WCPSSstats",
+  "name": "wcpss-schools",
   "version": "1.0.0",
   "description": "A MEAN app that exposes WCPSS statistics via RESTful APIs",
   "main": "server.js",
