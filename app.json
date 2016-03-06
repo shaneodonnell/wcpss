@@ -1,8 +1,8 @@
 {
-  "name": "MEAN Contact List Example",
-  "description": "A MEAN app that allows users to manage a contact list.",
-  "repository": "https://github.com/chrisckchang/mean-contactlist",
+  "name": "WCPSS Schools Example",
+  "description": "A MEAN app that allows RESTful access to WCPSS School Data.",
+  "repository": "https://github.com/shaneodonnell/wcpss",
   "logo": "https://mongolab.com/company/brand/resources/MongoLab-Logo-OnWhite-RGB.png",
-  "keywords": ["node", "express", "angular", "MEAN", "mongodb", "REST", "API"],
+  "keywords": ["wcpss", "wake", "schools", "node", "express", "angular", "MEAN", "mongodb", "REST", "API"],
   "addons": ["mongolab"]
 }
