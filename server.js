@@ -5,7 +5,7 @@ var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 //var MONGOLAB_URI = "mongodb://wcpss:WCP55sch00l5@ds023478.mlab.com:23478/heroku_qgqdjjlx";
 var MONGO_URI = "mongodb://wcpss:WCP55sch00l5@droplet.shaneo.com:27017/schools";
-var PORT = 80;
+var PORT = 8888;
 var SCHOOLS_COLLECTION = "schools";
 
 var app = express();
