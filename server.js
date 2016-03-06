@@ -5,7 +5,6 @@ var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 //var MONGOLAB_URI = "mongodb://wcpss:WCP55sch00l5@ds023478.mlab.com:23478/heroku_qgqdjjlx";
 var MONGO_URI = "mongodb://wcpss:WCP55sch00l5@droplet.shaneo.com:27017/schools";
-var PORT = 8888;
 var SCHOOLS_COLLECTION = "schools";
 
 var app = express();
@@ -26,7 +25,7 @@ mongodb.MongoClient.connect(MONGO_URI, function (err, database) {
   console.log("Database connection ready");
 
   // Initialize the app.
-  var server = app.listen(PORT || 8080, function () {
+  var server = app.listen(process.env.PORT || 8888, function () {
     var port = server.address().port;
     console.log("App now running on port ", port);
   });
