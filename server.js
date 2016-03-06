@@ -58,8 +58,8 @@ app.get("/schools", function(req, res) {
  *    GET: find school by id
  */
 
-app.get("/schools/:leaid", function(req, res) {
-  db.collection(SCHOOLS_COLLECTION).findOne({ leaid: req.params.id }, function(err, doc) {
+app.get("/schools/:lea_code", function(req, res) {
+  db.collection(SCHOOLS_COLLECTION).findOne({ lea_code: req.params.lea_code }, function(err, doc) {
     if (err) {
       handleError(err.message, "Failed to get school");
     } else {
