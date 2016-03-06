@@ -3,8 +3,9 @@ var path = require("path");
 var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
-var MONGOLAB_URI = "mongodb://wcpss:WCP55sch00l5@ds023478.mlab.com:23478/heroku_qgqdjjlx";
-var PORT = 80;
+//var MONGOLAB_URI = "mongodb://wcpss:WCP55sch00l5@ds023478.mlab.com:23478/heroku_qgqdjjlx";
+var MONGO_URI = "mongodb://wcpss:WCP55sch00l5@droplet.shaneo.com:27017/schools";
+var PORT = 8000;
 var SCHOOLS_COLLECTION = "schools";
 
 var app = express();
@@ -14,7 +15,7 @@ app.use(bodyParser.json());
 var db;  // Database connection
 
 // Connect to the database  
-mongodb.MongoClient.connect(MONGOLAB_URI, function (err, database) {
+mongodb.MongoClient.connect(MONGO_URI, function (err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
