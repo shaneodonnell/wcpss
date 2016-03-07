@@ -6,7 +6,7 @@ angular.module("schoolsApp", ['ngRoute'])
                 controller: "ListController",
                 resolve: {
                     schools: function(Schools) {
-                        return Schools.getSchools();
+                        return Schools.getSchool();
                     }
                 }
             })
