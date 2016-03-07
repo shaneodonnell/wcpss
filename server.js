@@ -39,10 +39,6 @@ function handleError(reason, message, code) {
   res.status(code || 500).json({"error": message});
 }
 
-app.get("/", function(req, res) {
-	handleError(err.message, "Move along.  Nothing to see here.");
-});
-
 /*  "/schools"
  *    GET: finds all schools
  */
