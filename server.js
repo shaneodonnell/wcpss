@@ -57,8 +57,8 @@ app.get("/schools", function(req, res) {
   });
 });
 
-/*  "/contacts/:id"
- *    GET: find school by id
+/*  "/schools/:lea_code"
+ *    GET: find school by lea_code
  */
 
 app.get("/schools/:lea_code", function(req, res) {
