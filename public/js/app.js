@@ -19,7 +19,7 @@ angular.module("schoolsApp", ['ngRoute'])
             })
     })
     .service("Schools", function($http) {
-        this.getContacts = function() {
+        this.getSchools = function() {
             return $http.get("/schools").
                 then(function(response) {
                     return response;
