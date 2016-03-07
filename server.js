@@ -49,6 +49,7 @@ app.get("/schools", function(req, res) {
       handleError(err.message, "Failed to get schools.");
     } else {
       res.status(200).json(docs);  
+			print("We think we got all the schools");
     }
   });
 });
