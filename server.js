@@ -24,7 +24,7 @@ mongodb.MongoClient.connect(MONGO_URI, function (err, database) {
   db = database;
   console.log("Database connection ready");
 //	var testDoc = db.collection('schools',findOne({}, function(err, item) {}));
-	console.log( testDoc );
+//	console.log( testDoc );
   // Initialize the app.
   var server = app.listen(process.env.PORT || 8888, function () {
     var port = server.address().port;
