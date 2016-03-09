@@ -21,7 +21,7 @@
     <tbody>
       <tr ng-repeat="school in schools | orderBy:'name'" style="cursor:pointer">
         <td>
-					<a ng-href="#/schools/{{school._id}}">{{ school.name }}</a>
+					<a ng-href="/schools/{{school._id}}">{{ school.name }}</a>
         </td>
       </tr>
     </tbody>
