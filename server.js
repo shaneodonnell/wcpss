@@ -23,7 +23,8 @@ mongodb.MongoClient.connect(MONGO_URI, function (err, database) {
   // Save database object from the callback for reuse.
   db = database;
   console.log("Database connection ready");
-	console.log( db.collection(SCHOOLS_COLLECTION,findOne({})) );
+	var testDoc = db.collection('schools',findOne({}, function(err, item) {}));
+	console.log( testDoc );
   // Initialize the app.
   var server = app.listen(process.env.PORT || 8888, function () {
     var port = server.address().port;
