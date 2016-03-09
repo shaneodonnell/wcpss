@@ -20,7 +20,7 @@ angular.module("schoolsApp", ['ngRoute'])
     })
     .service("Schools", function($http) {
         this.getSchools = function() {
-            return $http.get("/schools").
+            return $http.get("#/schools").
                 then(function(response) {
                     return response;
                 }, function(response) {
@@ -28,7 +28,7 @@ angular.module("schoolsApp", ['ngRoute'])
                 });
         }
         this.getSchool = function(lea_code) {
-            var url = "/schools/" + lea_code;
+            var url = "#/schools/" + lea_code;
             return $http.get(url).
                 then(function(response) {
                     return response;
