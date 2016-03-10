@@ -19,9 +19,9 @@
 			</tr>
 		</th>
     <tbody>
-      <tr ng-repeat="school in schools track by school._id" style="cursor:pointer">
+      <tr ng-repeat="school in schools track by $index" style="cursor:pointer">
         <td>
-					<a ng-href="/schools/{{school._id}}">{{ school.name }}</a>
+					<a ng-href="/schools/:{{school.lea_code}}">{{ school.name }}</a>
         </td>
       </tr>
     </tbody>
