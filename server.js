@@ -22,7 +22,7 @@ mongodb.MongoClient.connect(MONGOLAB_URI, function (err, database) {
 
   // Save database object from the callback for reuse.
   db = database;
-  console.log("Database connection to "+db[databaseName]+" ready.");
+  console.log("Database connection to "+db.databaseName+" ready.");
 //	Object.keys(db).forEach(function(key,index) {
 //		console.log(key+": "+index);
 //	});
