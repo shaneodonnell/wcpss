@@ -19,7 +19,7 @@
 			</tr>
 		</th>
     <tbody>
-      <tr ng-repeat="school in schools track by $lea_code | orderBy:'name'" style="cursor:pointer">
+      <tr ng-repeat="school in schools track by school.lea_code | orderBy:'name'" style="cursor:pointer">
         <td>
 					<a ng-href="/schools/{{school._id}}">{{ school.name }}</a>
         </td>
