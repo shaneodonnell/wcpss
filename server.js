@@ -22,10 +22,10 @@ mongodb.MongoClient.connect(MONGOLAB_URI, function (err, database) {
 
   // Save database object from the callback for reuse.
   db = database;
-  console.log("Database connection to "+db.name+" ready.");
-	Object.keys(db).forEach(function(key,index) {
-		console.log(key+": "+index);
-	});
+  console.log("Database connection to "+db[databaseName]+" ready.");
+//	Object.keys(db).forEach(function(key,index) {
+//		console.log(key+": "+index);
+//	});
   // Initialize the app.
   var server = app.listen(process.env.PORT || 8888, function () {
     var port = server.address().port;
