@@ -1,9 +1,9 @@
 angular.module("schoolsApp", ['ngRoute'])
     .config(function($routeProvider) {
         $routeProvider
-            .when("/", {
-                templateUrl: "list.html",
+            .when("#/", {
                 controller: "ListController",
+                templateUrl: "list.html",
                 resolve: {
                     schools: function(Schools) {
                         return Schools.getSchools();
