@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 var db;  // Database connection
 
 // Connect to the database  
-mongodb.MongoClient.connect(MONGOLAB_URI, function (err, database) {
+mongodb.MongoClient.connect(MONGO_URI, function (err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
