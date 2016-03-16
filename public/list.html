@@ -11,14 +11,12 @@
 </div>
 <div class="container">
   <table class="table table-hover">
-		<th>
-			<tr>
+			<th>
 				<td>
 					School Name
 				</td>
-			</tr>
-		</th>
-      <tr ng-repeat="school in schools orderBy 'school.name'" style="cursor:pointer;">
+			</th>
+      <tr ng-repeat="school in schools" style="cursor:pointer;">
         <td>
 					<a ng-href="/schools/{{school.lea_code}}">{{ school.name }}</a>
         </td>
